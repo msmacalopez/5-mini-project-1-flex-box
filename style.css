@@ -64,14 +64,18 @@ header > div {
   align-items: center;
 }
 .logo {
-  background: white;
-  color: var(--bluecolorprimary);
+  background: radial-gradient(white, var(--bluecolorprimary));
   width: 80px;
   height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.logo > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .logo > div {
   border: 2px dotted var(--bluecolorprimary);
@@ -131,7 +135,7 @@ header ul li:hover {
 /* <!-- latest post section  --> */
 .latest {
   padding: 3rem 0;
-  background: url(./resources/img1.jpg) no-repeat center;
+  background: url(./resources/img4.jpg) no-repeat center;
   background-size: cover;
   filter: grayscale(0.3);
 }
@@ -154,8 +158,14 @@ article {
   margin-bottom: 24px; /* between the article and the parent */
   padding: 20px 16px;
 }
-article .art-img {
-  width: 400px;
+
+article .title {
+  margin-bottom: 10px;
+}
+article .art-img > img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 article .btn {
   float: right; /* related to the parent, to the right of the parent */
