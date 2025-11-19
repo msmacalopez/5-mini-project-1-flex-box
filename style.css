@@ -204,6 +204,9 @@ article .btn {
   /* border-top-left-radius: 10px;
   border-top-right-radius: 10px; */
   border-radius: 10px 10px 0 0;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 .card .btn {
   width: 100%;
